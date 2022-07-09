@@ -48,6 +48,11 @@ function load_layer() {
     url_poly += "?parameter="+value_param;
     url_poly += "&year="+year;
 
+    $.getJSON(url_poly, function(data){
+        console.log(data['features'].length);
+        console.log(data);
+    })
+
     $.getJSON(url_max, function(data){
         //alert('karan');
         var max_value = data.maximum[0].max;
@@ -72,8 +77,8 @@ function load_layer() {
                             }),
                             stroke: new ol.style.Stroke({
                             color: 'white',
-                            lineDash: [2],
-                            width: 2
+                            lineDash: [1],
+                            width: 5
                             })
                         });
                     }
@@ -94,8 +99,8 @@ function load_layer() {
                         }),
                         stroke: new ol.style.Stroke({
                         color: 'white',
-                        lineDash: [2],
-                        width: 2
+                        lineDash: [5],
+                        width: 5
                         })
                     });
                 }
@@ -115,12 +120,12 @@ function load_layer() {
                 }),
                 stroke: new ol.style.Stroke({
                 color: '#fff',
-                width: 2
+                width: 2    
                 })
             });
         
             var fill = new ol.style.Fill({color: col});
-            var stroke = new ol.style.Stroke({color: col1, width: 1});
+            var stroke = new ol.style.Stroke({color: col1, width: 2});
             
             
             
@@ -160,7 +165,9 @@ function load_layer() {
         title: 'Layer 1 '+value_param+'('+year+')',
             source: new ol.source.Vector({
             url: url_poly,
-            format: new ol.format.GeoJSON()
+            format: new ol.format.GeoJSON(),
+           //dataProjection:'EPSG:4326',
+                    
             }),
             style: function (feature, resolution) {
                 return getStyle1(feature, resolution);
@@ -189,8 +196,10 @@ function load_layer() {
     });
            
     geojson_point.getSource().on('addfeature', function(){
-       map.getView().fit(
+       
+        map.getView().fit(
            geojson_point.getSource().getExtent(),
+           
            { duration: 000, size: map.getSize() }
        );
     });
