@@ -44,17 +44,32 @@ function click_info(evt) {
 //    var coord = geometry.getCoordinates();
 //    var coordinate = evt.coordinate;
     //alert(coordinate);
+<<<<<<< HEAD
+    var content1 = '<h5>' + feature.get('brgy').charAt(0).toUpperCase() + feature.get('brgy').slice(1) + '</h5>';
+    
+
+    // content1 += '<h6>' + value_param.charAt(0).toUpperCase() + value_param.slice(1) + ': ' + numberWithCommas(Math.round(feature.get([value_param]))) + '</h6>';
+    content1 += '<h6>' + 'Land Area: ' + feature.get('sqkm') + ' Sq. Km.';
+    
+    
+=======
 //    var content1 = '<h5>' + feature.get('brgy').charAt(0).toUpperCase() + feature.get('brgy').slice(1) + '</h5>';
     // content1 += '<h6>' + value_param.charAt(0).toUpperCase() + value_param.slice(1) + ': ' + numberWithCommas(Math.round(feature.get([value_param]))) + '</h6>';
 //    content1 += '<h6>' + 'Land Area: ' + feature.get('sqkm') + ' Sq. Km.';
+>>>>>>> bc7d619092bd6268a5e193c6c3b50a457633b512
 
     /*  var content1 = '<h3>' + feature.get([name]) + '</h3>';
       content1 += '<h5>' + feature.get('crop')+' '+ value_param +' '+ value_seas+' '+value_level+'</h5>'
       content1 += '<h5>' + feature.get([value_param]) +' '+ unit +'</h5>';*/
 
     // alert(content1);
+<<<<<<< HEAD
+    content.innerHTML = content1; 
+    overlay.setPosition(coordinate);
+=======
 //    content.innerHTML = content1;
 //    overlay.setPosition(coordinate);
+>>>>>>> bc7d619092bd6268a5e193c6c3b50a457633b512
 
     // console.info(feature.getProperties());
 
