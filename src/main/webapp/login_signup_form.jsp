@@ -97,18 +97,9 @@
             <div class="panel-ui left-panel">
                 <div class="content-ui">
                     <h3>New here?</h3>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum debitis ratione fuga.</p>
-                    <button class="btn-submit transparent-ui" id="sign-up-button">Sign up</button>
-=======
-                    <p>Please signup</p>
-                    <button class="btn transparent" id="sign-up-button">Sign up</button>
->>>>>>> 3bc322d... [GIS-052] - Minor Changes
-=======
                     <p>Please Sign Up</p>
                     <button class="btn-submit transparent-ui" id="sign-up-button">Sign up</button>
->>>>>>> 61d4c0a... [GIS-054] - Minor Changes
+
                 </div>
                 <img src="static/img/sign_in.svg" alt="" class="image">
             </div>
@@ -116,18 +107,9 @@
             <div class="panel-ui right-panel">
                 <div class="content-ui">
                     <h3>One of us?</h3>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum debitis ratione fuga.</p>
-                    <button class="btn-submit transparent-ui" id="sign-in-button">Sign in</button>
-=======
-                    <p>Please Login to your account now </p>
-                    <button class="btn transparent" id="sign-in-button">Sign in</button>
->>>>>>> 3bc322d... [GIS-052] - Minor Changes
-=======
                     <p>Please log in </p>
                     <button class="btn-submit transparent-ui" id="sign-in-button">Sign in</button>
->>>>>>> 61d4c0a... [GIS-054] - Minor Changes
+
                 </div>
                 <img src="static/img/sign_up.svg" alt="" class="image">
             </div>
