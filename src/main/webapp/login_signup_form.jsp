@@ -99,7 +99,6 @@
                     <h3>New here?</h3>
                     <p>Please Sign Up</p>
                     <button class="btn-submit transparent-ui" id="sign-up-button">Sign up</button>
-
                 </div>
                 <img src="static/img/sign_in.svg" alt="" class="image">
             </div>
@@ -109,7 +108,6 @@
                     <h3>One of us?</h3>
                     <p>Please log in </p>
                     <button class="btn-submit transparent-ui" id="sign-in-button">Sign in</button>
-
                 </div>
                 <img src="static/img/sign_up.svg" alt="" class="image">
             </div>
